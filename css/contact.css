@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Bhai", cursive;
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  background: rgb(54, 54, 59);
+  height: 70px;
+  width: 100%;
+}
+.logo {
+  color: white;
+  font-size: 35px;
+  margin: 0px 20px;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  float: right;
+  margin-right: 30px;
+  margin-top: 27px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 10px;
+  margin: 2px 10px;
+}
+
+nav li a {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 7px;
+  padding: 3px 5px;
+  text-decoration: none !important;
+}
+
+a.active,
+a:hover {
+  background-color: rgb(5, 5, 5);
+  transition: 0.5s;
+}
+a:link {
+  text-decoration: none !important;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 150px;
+  height: 470px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url("/img/contact.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 95%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.87;
+}
+#home h1 {
+  color: rgb(41, 38, 38);
+  text-align: center;
+  font-family: "Alfa Slab One", cursive;
+  padding: 34px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 23px;
+  box-sizing: border-box
+  
+}
+
+.contact{
+    visibility:hidden;
+}
+#home p {
+  color: rgb(31, 4, 4);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Baloo Bhai", cursive;
+  padding: 12px;
+}
+.h-primary {
+  font-size: 2.5rem;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+}
+
+.h-secondary {
+  font-size: 1.7rem;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+}
+.center {
+  text-align: center;
+}
+
+input {
+  padding: 4px 20px;
+  margin: 0px 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.btn {
+  padding: 12px 16px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: #15066c;
+  color: white;
+  margin: 12px;
+  font-size: 1.5 rem;
+  font-family: "Baloo Bhai", cursive;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(172, 169, 12);
+  color: black;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 24px 22px;
+  text-align: center;
+  position: relative;
+  margin: 110px 0px;
+  font-weight: bold;
+  position: sticky;
+}
